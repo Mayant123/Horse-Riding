@@ -1,0 +1,74 @@
+/* .swiper {
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  
+  .swiper-slide {
+    background-position: center;
+    background-size: cover;
+    width: 300px;
+    height: 300px;
+  }
+  
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+  } */
+/* ############################## */
+  .bg-header{
+    background-color: #c69146;
+  }
+  .bg-button{
+    background-color: #d6af78;
+  }
+  :hover.bg-button-on-hover{
+    background-color: #c69146;
+  }
+  
+/* ####################################### */
+
+.carousel-container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.carousel-slide {
+  padding: 10px;
+  transition: transform 0.3s ease-in-out;
+  position: relative; /* Ensure the overlay is positioned correctly */
+}
+
+.carousel-image {
+  /* border-radius: 20px; */
+  width: 100%;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+/* Style for the active slide */
+.slick-center .carousel-image {
+  transform: scale(1.2); /* Scale up the active image */
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.8);
+}
+
+.slick-center .overlay {
+  opacity: 1;
+}
+
+.slick-slide:not(.slick-center) .carousel-image {
+  opacity: 0.8;
+  transform: scale(0.8); /* Scale down the side images */
+}
+
+.slick-slide:not(.slick-center) .overlay {
+  opacity: 0;
+}
+
+.overlay {
+  /* Ensure the overlay sticks to the bottom of the image */
+  background: rgba(0, 0, 0, 0.5); /* Semi-transparent background for readability */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  text-align: center;
+}
