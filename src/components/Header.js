@@ -11,7 +11,7 @@ const Header = () => {
   };
 
   return (
-    <nav className="bg-header border-gray-200 py-1">
+    <nav className=" border-gray-200 py-1">
       <div className="max-w-screen-xl mx-auto flex flex-wrap items-center justify-between px-4 md:px-6">
         <a
           href="#"
@@ -50,7 +50,7 @@ const Header = () => {
         <div
           className={`${
             isMenuOpen ? 'block' : 'hidden'
-          } w-full md:w-auto md:flex md:items-center md:space-x-6 md:mt-0 md:border-0 bg-gray-800 md:bg-transparent`}
+          } w-full md:w-auto md:flex md:items-center md:space-x-6 md:mt-0 md:border-0 md:bg-transparent`}
           id="navbar-default"
         >
           <ul className="font-medium flex flex-col md:flex-row p-4 md:p-0 border border-gray-100 rounded-lg md:border-0">

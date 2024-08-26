@@ -4,7 +4,7 @@ const Location = () => {
   return (
     <section className="mt-10 flex flex-col lg:flex-row">    
       <div className="w-full lg:w-1/2 p-6">
-        <h2 className="text-3xl font-bold text-gray-800 mb-4">
+        <h2 className="text-[2.75rem] leading-[3rem] font-bold text-gray-800 mb-4">
           Get in touch with us
         </h2>
         <p className="mb-6">Horse Equipment</p>

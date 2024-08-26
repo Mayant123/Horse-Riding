@@ -1,6 +1,7 @@
 import React from 'react';
 import horseImage from '../assets/img/img_2.jpg';
 import secondHorseImage from '../assets/img/img_1.jpg';
+import "./style.css";
 
 function HomeContent() {
   return (
@@ -19,7 +20,7 @@ function HomeContent() {
           Lectus sollicitudin efficitur curabitur tincidunt posuere dictumst turpis vulputate dictum.
           Duis turpis imperdiet aptent ultricies congue nulla placera accumsan.
         </p>
-        <button className="bg-button bg-button-on-hover px-6 py-3 rounded-md shadow transition">
+        <button className="w-full bg-button hover:bg-button-on-hover font-bold py-2 px-4 rounded-md shadow transition cursor-pointer focus:outline-none focus:shadow-outline z-20">
           Discover More
         </button>
       </div>

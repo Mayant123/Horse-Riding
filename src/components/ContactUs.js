@@ -84,7 +84,7 @@ const ContactUs = () => {
       </div>
 
       <div className="w-full lg:w-[40%] lg:pl-6 mt-10 lg:mt-0">
-        <h2 className="text-3xl font-bold text-gray-800 mb-4">
+        <h2 className="text-[2.75rem] leading-[3rem] font-bold text-gray-800 mb-4">
         Send us a message
         </h2>
         <p className="mb-6">Lectus sollicitudin efficitur curabitur tincidunt posuere dictumst turpis vulputate dictum.
