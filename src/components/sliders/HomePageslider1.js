@@ -36,10 +36,9 @@ const sliderData = [
 
 function HomePageslider1() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <div className="flex flex-col text-center p-4">
-          <p className="text-3xl font-[cursive] font-black italic">
+    
+        <div className="flex flex-col text-center p-4 font-serif">
+          <p className="text-3xl font-black">
             Provide Services In These Countries
           </p>
 
@@ -77,7 +76,7 @@ function HomePageslider1() {
                     alt={`${slide.country} Flag`}
                     className="w-1/2 h-full object-cover rounded-s-lg rounded-e-3xl"
                   />
-                  <p className="ms-12 text-xl font-[cursive] font-black italic truncate">
+                  <p className="ms-8 text-xl font-black truncate">
                     {slide.country}
                   </p>
                 </div>
@@ -85,8 +84,7 @@ function HomePageslider1() {
             ))}
           </Swiper>
         </div>
-      </header>
-    </div>
+   
   );
 }
 

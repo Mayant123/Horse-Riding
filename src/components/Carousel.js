@@ -53,11 +53,12 @@ const Carousel = () => {
     <div className="carousel-container">
       <Slider {...settings}>
         {images.map((image) => (
-          <div key={image.id} className="carousel-slide relative rounded-md">
+          <div key={image.id} className="carousel-slide relative">
             <img
               src={image.src}
               alt={image.alt}            
-            className="carousel-image w-full h-96 object-cover rounded-md transition-transform duration-300 ease-in-out"
+            className="carousel-image w-full h-full object-cover rounded-lg  transition-transform duration-300 ease-in-out"
+            // className="w-full h-full object-cover rounded-lg shadow-lg relative z-10"
             />
             <div className="overlay absolute bottom-0 left-0 right-0 flex flex-col items-center p-4 bg-gradient-to-t from-black via-transparent to-transparent">
               <h2 className="text-white text-xl mb-2">{image.text}</h2>

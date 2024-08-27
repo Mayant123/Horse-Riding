@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 const Footer = () => {
   return (
-    <footer className="bg-gray-800 text-white py-6">
+    <footer className="bg-gray-800 text-white py-6 font-serif ">
       <div className="container mx-auto lg:px-[115px] px-4">
         <div className="flex flex-col md:flex-row justify-between items-start">
           {/* Left Section */}
