@@ -48,7 +48,7 @@ function HomePageslider1() {
             freeMode={true}
             loop={true}
             autoplay={{
-              delay: 2500,
+              delay: 1000,
               disableOnInteraction: false,
             }}
             breakpoints={{

@@ -20,58 +20,63 @@ function NewSlider() {
   ];
 
   return (
-    <Swiper
-      effect="coverflow"
-      centeredSlides={true}
-      slidesPerView={3}
-      spaceBetween={10}
-      loop={true}
-      autoplay={{
-        delay: 2500,
-        disableOnInteraction: false,
-      }}
-      coverflowEffect={{
-        rotate: 20,
-        stretch: 0,
-        depth: 50,
-        modifier: 2.5,
-        slideShadows: false,
-      }}
-      breakpoints={{
-        640: {
-          slidesPerView: 1,
-          spaceBetween: 30,
-        },
-        768: {
-          slidesPerView: 3,
-          spaceBetween: 20,
-        },
-        1024: {
-          slidesPerView: 3,
-          spaceBetween: 30,
-        },
-      }}
-      modules={[EffectCoverflow,Autoplay]}
-      className="mySwiper"
-    >
-      {images.map((image, index) => (
-        <SwiperSlide key={index} className="flex justify-center items-center">
-          <div className="relative w-40 h-40 md:w-72 md:h-64 lg:w-80 lg:h-72">
-            <img
-              src={image.src}
-              alt={image.alt}
-              className="w-full h-full object-cover rounded-lg transition-transform duration-500 transform hover:scale-105"
-            />
-            <div className="absolute bottom-0 left-0 right-0 flex flex-col items-center p-4 bg-gradient-to-t from-black via-transparent to-transparent">
-              <h2 className="text-white text-lg font-semibold mb-2">{image.text}</h2>
-              <button className="px-4 py-2 bg-orange-500 text-white font-semibold rounded-md mt-2 hover:bg-orange-600">
-                Enquire Now
-              </button>
+    <div>
+      <p className="font-serif text-3xl font-black text-center">
+        Our Products
+      </p>
+      <Swiper
+        effect="coverflow"
+        centeredSlides={true}
+        slidesPerView={3}
+        spaceBetween={10}
+        loop={true}
+        autoplay={{
+          delay: 2500,
+          disableOnInteraction: false,
+        }}
+        coverflowEffect={{
+          rotate: 20,
+          stretch: 0,
+          depth: 50,
+          modifier: 2.5,
+          slideShadows: false,
+        }}
+        breakpoints={{
+          640: {
+            slidesPerView: 1,
+            spaceBetween: 30,
+          },
+          768: {
+            slidesPerView: 3,
+            spaceBetween: 20,
+          },
+          1024: {
+            slidesPerView: 3,
+            spaceBetween: 30,
+          },
+        }}
+        modules={[EffectCoverflow, Autoplay]}
+        className="mySwiper mt-10"
+      >
+        {images.map((image, index) => (
+          <SwiperSlide key={index} className="flex justify-center items-center">
+            <div className="relative w-40 h-40 md:w-72 md:h-64 lg:w-80 lg:h-72">
+              <img
+                src={image.src}
+                alt={image.alt}
+                className="w-full h-full object-cover rounded-lg transition-transform duration-500 transform hover:scale-105"
+              />
+              <div className="absolute bottom-0 left-0 right-0 flex flex-col items-center p-4 bg-gradient-to-t from-black via-transparent to-transparent">
+                <h2 className="text-white text-lg font-semibold mb-2">{image.text}</h2>
+                <button className="px-4 py-2 bg-orange-500 text-white font-semibold rounded-md mt-2 hover:bg-orange-600">
+                  Enquire Now
+                </button>
+              </div>
             </div>
-          </div>
-        </SwiperSlide>
-      ))}
-    </Swiper>
+          </SwiperSlide>
+        ))}
+      </Swiper>
+    </div>
   );
 }
 

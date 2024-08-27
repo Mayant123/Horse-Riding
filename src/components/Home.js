@@ -13,40 +13,40 @@ import NewSlider from "./NewSilder";
 const Home = () => {
   return (
     <section className="flex flex-col items-center min-h-screen px-4 pb-8">
-      <div className="relative w-full h-screen">
-  <video
-    autoPlay
-    loop
-    muted
-    playsInline
-    className="absolute top-0 left-0 w-full h-full object-cover"
-  >
-    <source src={vid} type="video/mp4" />
-    Your browser does not support the video tag.
-  </video>
+      <div className="relative w-[24rem] md:w-[77rem] h-screen rounded-b-[20rem]">
+        <video
+          autoPlay
+          loop
+          muted
+          playsInline
+          className="absolute top-0 left-0 w-full h-full object-cover rounded-b-[20rem]"
+        >
+          <source src={vid} type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
 
-  <div className="relative z-10 flex flex-col items-center justify-center h-full text-center p-8">
-    <img
-      src={header_logo}
-      className="h-24 w-24 md:h-32 md:w-32 border-4 rounded-full shadow-lg mb-4"
-      alt="Company Logo"
-    />
-    <h1 className="text-3xl md:text-5xl lg:text-5xl font-extrabold text-white tracking-wide mb-2 font-neue-haas-unica">
-      THK INTERNATIONAL TRADING
-    </h1>
-    <p className="text-lg md:text-2xl lg:text-3xl text-white italic tracking-wide">
-      SADDLE UP - RIDE WITH PASSION
-    </p>
-  </div>
+        <div className="relative z-10 flex flex-col items-center justify-center h-full text-center p-8">
+          <img
+            src={header_logo}
+            className="h-24 w-24 md:h-32 md:w-32 border-4 rounded-full shadow-lg mb-4"
+            alt="Company Logo"
+          />
+          <h1 className="text-3xl md:text-5xl lg:text-5xl font-extrabold text-white tracking-wide mb-2 font-neue-haas-unica">
+            THK INTERNATIONAL TRADING
+          </h1>
+          <p className="text-lg md:text-2xl lg:text-3xl text-white italic tracking-wide">
+            SADDLE UP - RIDE WITH PASSION
+          </p>
+        </div>
 
-  <div className="absolute inset-0 bg-black opacity-50"></div>
-</div>
+        <div className="absolute inset-0 bg-black opacity-50 rounded-b-[20rem]"></div>
+      </div>
 
 
       <div className="flex flex-col gap-8 w-full max-w-screen-lg mb-8 bg-gray-100 p-6 rounded-lg shadow-lg lg:mt-10 text-center">
         <p className=" font-semibold text-2xl ">About Us</p>
         <div>
-        <p className="font-serif text-lg leading-relaxed">
+          <p className="font-serif text-lg leading-relaxed">
             THK INTERNATIONAL TRADING is a leading manufacturer and exporter of
             high-quality equestrian products, dedicated to providing innovative
             solutions for horse riders, trainers, and enthusiasts worldwide. Our
@@ -116,7 +116,7 @@ const Home = () => {
       <div className="w-full max-w-screen-lg mb-8 mt-20">
         {/* <Carousel /> */}
         {/* <SwiperCarousel /> */}
-        <NewSlider/>
+        <NewSlider />
       </div>
       <div className="w-full max-w-screen-lg mb-8">
         <HomePageslider1 />
