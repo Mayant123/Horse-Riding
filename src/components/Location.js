@@ -24,8 +24,8 @@ const Location = () => {
         </div>
         <div className="mb-4">
           <label className="block text-gray-700 font-bold">Phone</label>
-          <p>+968 7909 8800</p>
-          <p>+91 9760 66 44 22</p>
+          <p>+968 7909 8800 (Oman)</p>
+          <p>+91 9760 66 44 22 (India)</p>
         </div>
       </div>
 

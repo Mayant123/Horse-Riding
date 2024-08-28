@@ -87,8 +87,8 @@ const ContactUs = () => {
         <h2 className="text-[2.75rem] leading-[3rem] font-bold text-gray-800 mb-4">
         Send us a message
         </h2>
-        <p className="mb-6">Lectus sollicitudin efficitur curabitur tincidunt posuere dictumst turpis vulputate dictum.
-        Duis turpis imperdiet aptent ultricies congue nulla placera accumsan.</p>
+        {/* <p className="mb-6">Lectus sollicitudin efficitur curabitur tincidunt posuere dictumst turpis vulputate dictum.
+        Duis turpis imperdiet aptent ultricies congue nulla placera accumsan.</p> */}
         <div className="mb-4">
           <label className="block text-gray-700 font-bold">
             Our social media :
@@ -100,9 +100,9 @@ const ContactUs = () => {
             <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="text-pink-600 mr-2">
               <i className="fab fa-instagram fa-2x"></i>
             </a>
-            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="text-blue-400 mr-2">
+            {/* <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="text-blue-400 mr-2">
               <i className="fab fa-twitter fa-2x"></i>
-            </a>
+            </a> */}
             <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" className="text-red-600" mr-2>
               <i className="fab fa-youtube fa-2x"></i>
             </a>

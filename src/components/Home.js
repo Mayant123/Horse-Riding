@@ -13,7 +13,7 @@ import NewSlider from "./NewSilder";
 const Home = () => {
   return (
     <section className="flex flex-col items-center min-h-screen px-4 pb-8">
-      <div className="relative w-[24rem] md:w-[77rem] h-screen rounded-b-[20rem]">
+      <div className="relative w-[24rem] md:w-[77rem] h-[70vh] mb-5 md:mb-0 md:h-screen rounded-b-[20rem]">
         <video
           autoPlay
           loop
@@ -71,15 +71,7 @@ const Home = () => {
             className="text-pink-600 mb-2 md:mb-0"
           >
             <i className="fab fa-instagram fa-2x"></i>
-          </a>
-          <a
-            href="https://twitter.com"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-blue-400 mb-2 md:mb-0"
-          >
-            <i className="fab fa-twitter fa-2x"></i>
-          </a>
+          </a>         
           <a
             href="https://youtube.com"
             target="_blank"
@@ -94,7 +86,7 @@ const Home = () => {
         <HomeContent />
       </div>
       <div className="w-full max-w-screen-lg mb-8 bg-gray-100 p-6 rounded-lg shadow-lg lg:mt-10">
-        <h1 className="text-3xl font-bold mb-4 text-center">
+        <h1 className="text-3xl font-bold mb-4 text-center font-serif">
           Values
         </h1>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 font-serif text-lg leading-relaxed">
@@ -113,7 +105,7 @@ const Home = () => {
         </div>
       </div>
 
-      <div className="w-full max-w-screen-lg mb-8 mt-20">
+      <div className="w-full max-w-screen-lg mb-8 mt-4">
         {/* <Carousel /> */}
         {/* <SwiperCarousel /> */}
         <NewSlider />
