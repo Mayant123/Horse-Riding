@@ -9,16 +9,11 @@ import img_5 from "../assets/img/img_5.jpg";
 import img_6 from "../assets/img/img_6.jpg";
 
 const images = [
-  { id: 1, src: img_1, alt: "Image 1", text: "Stable and farm equipment" },
-  { id: 2, src: img_2, alt: "Image 2", text: "Saddles and saddle accessories" },
-  { id: 3, src: img_3, alt: "Image 3", text: "Bridles and reins" },
+  { id: 1, src: img_1, alt: "Image 1", text: "Saddles Girth and Stirrup" },
+  { id: 2, src: img_2, alt: "Image 2", text: "Bridles and reins" },
+  { id: 3, src: img_3, alt: "Image 3", text: "Lunging" },
   { id: 4, src: img_4, alt: "Image 4", text: "Riding apparel and footwear" },
-  {
-    id: 5,
-    src: img_5,
-    alt: "Image 5",
-    text: "Horse blankets and grooming supplies",
-  },
+  { id: 5, src: img_5, alt: "Image 5", text: "Whips and Spurs" },
   { id: 6, src: img_6, alt: "Image 6", text: "Bridles and reins" },
 ];
 
