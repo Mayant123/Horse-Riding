@@ -90,16 +90,16 @@ const Home = () => {
           Values
         </h1>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 font-serif text-lg leading-relaxed">
-          <div className="bg-[#e19120] p-4 rounded-lg shadow-md font-bold">
+          <div className="bg-[#d6af78] p-4 rounded-lg shadow-md font-bold">
             Quality and innovation
           </div>
-          <div className="bg-[#e19120] p-4 rounded-lg shadow-md font-bold">
+          <div className="bg-[#d6af78] p-4 rounded-lg shadow-md font-bold">
             Customer satisfaction and loyalty
           </div>
-          <div className="bg-[#e19120] p-4 rounded-lg shadow-md font-bold">
+          <div className="bg-[#d6af78] p-4 rounded-lg shadow-md font-bold">
             Integrity and transparency
           </div>
-          <div className="bg-[#e19120] p-4 rounded-lg shadow-md font-bold">
+          <div className="bg-[#d6af78] p-4 rounded-lg shadow-md font-bold">
             Passion for the equestrian community
           </div>
         </div>

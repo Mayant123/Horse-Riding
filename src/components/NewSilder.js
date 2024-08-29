@@ -7,6 +7,14 @@ import img_3 from "../assets/img/img_3.jpg";
 import img_4 from "../assets/img/img_4.jpg";
 import img_5 from "../assets/img/img_5.jpg";
 import img_6 from "../assets/img/img_6.jpg";
+import img_7 from "../assets/img/img_7.jpg";
+import img_8 from "../assets/img/img_8.jpg";
+import img_9 from "../assets/img/img_9.jpg";
+import img_10 from "../assets/img/img_10.jpg";
+import img_11 from "../assets/img/img_11.jpg";
+import img_12 from "../assets/img/img_12.jpg";
+import img_13 from "../assets/img/img_13.jpg";
+import img_14 from "../assets/img/img_14.jpg";
 
 const images = [
   { id: 1, src: img_1, alt: "Image 1", text: "Saddles Girth and Stirrup" },
@@ -15,6 +23,14 @@ const images = [
   { id: 4, src: img_4, alt: "Image 4", text: "Riding apparel and footwear" },
   { id: 5, src: img_5, alt: "Image 5", text: "Whips and Spurs" },
   { id: 6, src: img_6, alt: "Image 6", text: "Bridles and reins" },
+  { id: 7, src: img_7, alt: "Image 7", text: "" },
+  { id: 8, src: img_8, alt: "Image 8", text: "" },
+  { id: 9, src: img_9, alt: "Image 9", text: "" },
+  { id: 10, src: img_10, alt: "Image 10", text: "" },
+  { id: 11, src: img_11, alt: "Image 11", text: "" },
+  { id: 12, src: img_12, alt: "Image 12", text: "" },
+  { id: 13, src: img_13, alt: "Image 13", text: "" },
+  { id: 14, src: img_14, alt: "Image 14", text: "" },
 ];
 
 function NewSlider() {

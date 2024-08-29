@@ -1,6 +1,6 @@
 import React from "react";
-import horseImage from "../assets/img/img_2.jpg";
-import secondHorseImage from "../assets/img/img_1.jpg";
+import horseImage from "../assets/img/horse.jpg";
+import secondHorseImage from "../assets/img/horse.jpg";
 import "./style.css";
 
 function HomeContent() {
@@ -14,20 +14,20 @@ function HomeContent() {
         />
         <div className="hidden md:block before:absolute before:content-[''] before:top-4 before:right-4 before:w-full before:h-full before:bg-orange-300 before:rounded-lg before:z-0 before:shadow-md"></div>
       </div>
-      <div className="max-w-xl relative h-[300px] w-[300px] md:h-[400px] mt-4">
+      <div className="max-w-xl relative h-[300px] w-[300px] md:h-[400px] mt-4 md:ml-[170px]">
         <h1 className="text-4xl font-bold mb-4 font-serif">
           Roll Your Moments With A Horse
         </h1>
-        <p className="text-gray-600 mb-6 font-serif">
-          THK INTERNATIONAL TRADING is a leading manufacturer and exporter of
-          high-quality equestrian products, dedicated to providing innovative
-          solutions for horse riders, trainers, and enthusiasts worldwide.
+        <p className="text-gray-600 md:mb-6 font-serif">
+        Our mission is to enhance the equestrian experience through
+          exceptional products, unparalleled customer service, and a passion for
+          excellence.
         </p>
         <button className="hidden md:block w-full bg-button hover:bg-button-on-hover font-bold py-2 px-4 rounded-md shadow transition cursor-pointer focus:outline-none focus:shadow-outline z-20">
           Discover More
         </button>
       </div>
-      <div className="z-20 max-w-xl relative h-[295px] w-[300px] md:h-[400px] mt-4">
+      {/* <div className="z-20 max-w-xl relative h-[295px] w-[300px] md:h-[400px] mt-4">
         <div className="flex justify-end">
           <img
             src={secondHorseImage}
@@ -40,7 +40,7 @@ function HomeContent() {
           exceptional products, unparalleled customer service, and a passion for
           excellence.
         </p>
-      </div>
+      </div> */}
       <button className=" md:hidden w-full bg-button hover:bg-button-on-hover font-bold py-2 px-4 rounded-md shadow transition cursor-pointer focus:outline-none focus:shadow-outline z-20">
         Discover More
       </button>

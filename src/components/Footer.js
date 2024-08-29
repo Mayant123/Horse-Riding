@@ -20,12 +20,12 @@ const Footer = () => {
         <div className="flex flex-col lg:flex-row justify-between items-start">
           <div className="flex flex-col mb-6 lg:mb-0 lg:w-[30%]">
             <div className='w-auto h-auto rounded-md'>
-              <img src={logo} alt="Logo" className="mb-4 max-w-[150px] h-auto rounded-md" />
+              {/* <img src={logo} alt="Logo" className="mb-4 max-w-[150px] h-auto rounded-md" /> */}
+              <img src={logo} alt="Logo" className="h-24 w-24 md:h-32 md:w-32 border-4 rounded-full shadow-lg mb-4" />
             </div>
             {/* <p className="text-gray-200 mb-4">
               The website exits to host your adventure with a budget in mind. Experience your next getaway at our Showplace for yourself.
-            </p> */}
-            <p className="text-gray-200">Mumbai / Pune, Bengaluru</p>
+            </p> */}          
             <p className="text-gray-200">&copy; {new Date().getFullYear()} THK INTERNATIONAL TRADING. All rights reserved.</p>
           </div>
           <div className="flex flex-col mb-6 lg:mb-0 lg:w-[20%]">

@@ -69,38 +69,50 @@ const Header = () => {
             </li>
             <li className="md:mx-2">
               <Link
-                to="/about"
+                to="/about-us"
                 className={`block py-2 px-3 rounded md:p-0 ${
-                  location.pathname === '/about' 
+                  location.pathname === '/about-us' 
                     ? 'text-black' 
                     : 'text-gray-600 hover:text-black'
                 }`}
               >
-                About
+                About Us
               </Link>
             </li>
             <li className="md:mx-2">
               <Link
-                to="/service"
+                to="/products"
                 className={`block py-2 px-3 rounded md:p-0 ${
-                  location.pathname === '/service' 
+                  location.pathname === '/products' 
                     ? 'text-black' 
                     : 'text-gray-600 hover:text-black'
                 }`}
               >
-                Services
+                Products
               </Link>
             </li>
             <li className="md:mx-2">
               <Link
-                to="/contact"
+                to="/contact-us"
                 className={`block py-2 px-3 rounded md:p-0 ${
-                  location.pathname === '/contact' 
+                  location.pathname === '/contact-us' 
                     ? 'text-black' 
                     : 'text-gray-600 hover:text-black'
                 }`}
               >
-                Contact
+                Contact Us
+              </Link>
+            </li>
+            <li className="md:mx-2">
+              <Link
+                to="/gallery"
+                className={`block py-2 px-3 rounded md:p-0 ${
+                  location.pathname === '/gallery' 
+                    ? 'text-black' 
+                    : 'text-gray-600 hover:text-black'
+                }`}
+              >
+                Gallery
               </Link>
             </li>
           </ul>
