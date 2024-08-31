@@ -126,7 +126,11 @@ function NewSlider() {
             }}
           >
             <div className="absolute bottom-[-15px] left-0 right-0 flex flex-col items-center">
-              <h2 className="font-serif text-xl mb-2">{image.text}</h2>
+              <h2
+                className="font-serif text-xl mb-2 text-white bg-black bg-opacity-50 px-2 py-1 rounded"
+              >
+                {image.text}
+              </h2>
               <Link to="/contact-us">
                 <button className="z-[9999] relative px-4 py-2 bg-header font-semibold rounded">
                   Enquiry Now

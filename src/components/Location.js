@@ -1,5 +1,7 @@
 import React from "react";
-
+import { IoMdCall } from "react-icons/io";
+import { MdEmail } from "react-icons/md";
+import { FaLocationDot } from "react-icons/fa6";
 const Location = () => {
   return (
     <section className="mt-10 flex flex-col lg:flex-row">
@@ -14,18 +16,18 @@ const Location = () => {
         </p>
         <div className="mb-4">
           <label className="block text-gray-700 font-bold">Location</label>
-          <p>
-            P.O. Box 1519, Post code 122, AL Mabela Muscat, Sultanate of Oman
+          <p className="flex items-center gap-2">
+            <FaLocationDot/>P.O. Box 1519, Post code 122, AL Mabela Muscat, Sultanate of Oman
           </p>
         </div>
         <div className="mb-4">
           <label className="block text-gray-700 font-bold">Email</label>
-          <p>contact@thktrade.com</p>
+          <a href="mailto:contact@thktrade.com" className="flex items-center gap-2"><MdEmail/>contact@thktrade.com</a>
         </div>
         <div className="mb-4">
           <label className="block text-gray-700 font-bold">Phone</label>
-          <p>+968 7909 8800 (Oman)</p>
-          <p>+91 9760 66 44 22 (India)</p>
+          <a href="tel:+96879098800" className="flex items-center gap-2"><IoMdCall/>+968 7909 8800 (Oman)</a>
+          <a href="tel:+919760664422" className="flex items-center gap-2"><IoMdCall/>+91 9760 66 44 22 (India)</a>
         </div>
       </div>
 

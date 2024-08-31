@@ -3,6 +3,7 @@ import PhoneInput from 'react-phone-input-2';
 import 'react-phone-input-2/lib/style.css';
 import "./style.css";
 
+
 const ContactUs = () => {
   const [countryCode, setCountryCode] = useState('+1'); // Default country code
   const [phoneNumber, setPhoneNumber] = useState('');
@@ -141,13 +142,13 @@ const ContactUs = () => {
             Our social media :
           </label>
           <div className="flex space-x-4 mt-5">
-            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="text-blue-600 mr-2">
+            <a href="https://www.facebook.com/your-profile-name" target="_blank" rel="noopener noreferrer" className="text-blue-600 mr-2">
               <i className="fab fa-facebook-f fa-2x"></i>
             </a>
-            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="text-pink-600 mr-2">
+            <a href="https://www.instagram.com/your-username" target="_blank" rel="noopener noreferrer" className="text-pink-600 mr-2">
               <i className="fab fa-instagram fa-2x"></i>
             </a>
-            <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" className="text-red-600" mr-2>
+            <a href="https://www.youtube.com/channel/your-channel-id" target="_blank" rel="noopener noreferrer" className="text-red-600" mr-2>
               <i className="fab fa-youtube fa-2x"></i>
             </a>
           </div>
