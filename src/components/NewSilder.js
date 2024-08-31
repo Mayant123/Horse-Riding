@@ -15,6 +15,7 @@ import img_11 from "../assets/img/img_11.jpg";
 import img_12 from "../assets/img/img_12.jpg";
 import img_13 from "../assets/img/img_13.jpg";
 import img_14 from "../assets/img/img_14.jpg";
+import { Link, useNavigate } from "react-router-dom";
 
 const images = [
   { id: 1, src: img_1, alt: "Image 1", text: "Saddles Girth and Stirrup" },
@@ -106,10 +107,10 @@ function NewSlider() {
   //       hammer.off('swipe', handleSwipe);
   //     };
   //   }, []);
-
   return (
     <section className="relative overflow-hidden py-8 ">
       <p className="text-3xl font-black text-center font-serif">Our Products</p>
+
       <div
         ref={sliderRef}
         className="micro-slider  w-full h-[480px] flex items-center justify-center relative"
@@ -126,13 +127,16 @@ function NewSlider() {
           >
             <div className="absolute bottom-[-15px] left-0 right-0 flex flex-col items-center">
               <h2 className="font-serif text-xl mb-2">{image.text}</h2>
-              <button className="px-4 py-2 bg-header font-semibold rounded">
-                Enquiry Now
-              </button>
+              <Link to="/contact-us">
+                <button className="z-[9999] relative px-4 py-2 bg-header font-semibold rounded">
+                  Enquiry Now
+                </button>
+              </Link>
             </div>
           </div>
         ))}
       </div>
+
     </section>
   );
 }

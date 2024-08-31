@@ -2,6 +2,9 @@ import React, { useState } from "react";
 import PhoneInput from 'react-phone-input-2';
 import 'react-phone-input-2/lib/style.css';
 import "./style.css";
+import { IoMdCall } from "react-icons/io";
+import { MdEmail } from "react-icons/md";
+import { FaLocationDot } from "react-icons/fa6";
 
 function Contact() {
     const [countryCode, setCountryCode] = useState('+1'); // Default country code
@@ -18,18 +21,18 @@ function Contact() {
                     </h2>
                     <div className="mb-4">
                         <label className="block text-gray-700 font-bold">Location</label>
-                        <p>
-                            P.O. Box 1519, Post code 122, AL Mabela Muscat, Sultanate of Oman
+                        <p className="flex items-center gap-2">
+                            <FaLocationDot/>P.O. Box 1519, Post code 122, AL Mabela Muscat, Sultanate of Oman
                         </p>
                     </div>
                     <div className="mb-4">
                         <label className="block text-gray-700 font-bold">Email</label>
-                        <p>contact@thktrade.com</p>
+                        <p className="flex items-center gap-2"><MdEmail/>contact@thktrade.com</p>
                     </div>
                     <div className="mb-4">
                         <label className="block text-gray-700 font-bold">Phone</label>
-                        <p>+968 7909 8800 (Oman)</p>
-                        <p>+91 9760 66 44 22 (India)</p>
+                        <p className="flex items-center gap-2"><IoMdCall/>+968 7909 8800 (Oman)</p>
+                        <p className="flex items-center gap-2"><IoMdCall/>+91 9760 66 44 22 (India)</p>
                     </div>
                 </div>
 

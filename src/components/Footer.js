@@ -31,16 +31,16 @@ const Footer = () => {
           <div className="flex flex-col mb-6 lg:mb-0 lg:w-[20%]">
             <h3 className="text-xl font-semibold mb-4">Quick Links</h3>
             <ul className="space-y-2">
-              <li><Link to="#" className="hover:text-gray-100">Home</Link></li>
-              <li><Link to="#" className="hover:text-gray-100">About Us</Link></li>
-              <li><Link to="#" className="hover:text-gray-100">Services</Link></li>
-              <li><Link to="#" className="hover:text-gray-100">Contact</Link></li>
+              <li><Link to="/" className="hover:text-gray-100">Home</Link></li>
+              <li><Link to="/about-us" className="hover:text-gray-100">About Us</Link></li>
+              <li><Link to="/products" className="hover:text-gray-100">Products</Link></li>
+              <li><Link to="/contact-us" className="hover:text-gray-100">Contact Us</Link></li>
             </ul>
           </div>
           <div className="flex flex-col lg:w-[30%]">
             <h3 className="text-xl font-semibold mb-4">Contact Us</h3>
             <p className="text-gray-200">P.O. Box 1519, Post code 122, AL Mabela Muscat, Sultanate of Oman</p>
-            <p className="text-gray-200 mt-2">968 7909 8800 (Oman)</p>
+            <p className="text-gray-200 mt-2">+968 7909 8800 (Oman)</p>
             <p className="text-gray-200 mt-2">+91 9760 66 44 22 (India)</p>
             <p className="text-gray-200 mt-2">contact@thktrade.com</p>
 
