@@ -35,6 +35,7 @@ const Footer = () => {
               <li><Link to="/about-us" className="hover:text-gray-100">About Us</Link></li>
               <li><Link to="/products" className="hover:text-gray-100">Products</Link></li>
               <li><Link to="/contact-us" className="hover:text-gray-100">Contact Us</Link></li>
+              <li><Link to="/gallery" className="hover:text-gray-100">Gallery</Link></li>
             </ul>
           </div>
           <div className="flex flex-col lg:w-[30%]">

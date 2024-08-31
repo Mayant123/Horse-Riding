@@ -27,7 +27,7 @@ function Contact() {
                     </div>
                     <div className="mb-4">
                         <label className="block text-gray-700 font-bold">Email</label>
-                        <p className="flex items-center gap-2"><MdEmail/>contact@thktrade.com</p>
+                        <a href="mailto:contact@thktrade.com" className="flex items-center gap-2"><MdEmail/>contact@thktrade.com</a>
                     </div>
                     <div className="mb-4">
                         <label className="block text-gray-700 font-bold">Phone</label>
