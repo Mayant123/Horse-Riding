@@ -1,12 +1,4 @@
 import React, { useState } from "react";
-import img_1 from "../assets/img/img_1.jpg";
-import img_2 from "../assets/img/img_2.jpg";
-import img_3 from "../assets/img/img_3.jpg";
-import img_4 from "../assets/img/img_4.jpg";
-import img_5 from "../assets/img/img_5.jpg";
-import img_6 from "../assets/img/img_6.jpg";
-import img_7 from "../assets/img/img_7.jpg";
-import img_8 from "../assets/img/img_8.jpg";
 import products from "../components/Datas/ProductsData"
 import categories from "../components/Datas/Categories";
 
