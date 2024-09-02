@@ -30,10 +30,10 @@ function Products() {
     });
 
 
-  console.log("isNewArrival", showOnlyNewArrivals);
-  console.log("selected Category", selectedcategory);
-  console.log("searchItem", searchTerm);
-  console.log("filteredProduct", filteredProducts);
+//   console.log("isNewArrival", showOnlyNewArrivals);
+//   console.log("selected Category", selectedcategory);
+//   console.log("searchItem", searchTerm);
+//   console.log("filteredProduct", filteredProducts);
 
 
 
@@ -42,7 +42,7 @@ function Products() {
   return (
     <div className="container mx-auto p-6 lg:p-12">
       <div className="p-2 flex justify-center">
-        <p className="font-bold text-2xl">Search For your Product</p>
+        <p className="font-bold text-2xl">Choose Your Products</p>
       </div>
       <div className="py-4">
         <div className="flex flex-col md:flex-row justify-between items-center">
@@ -62,7 +62,7 @@ function Products() {
             </button>
           </div>
           <div>
-            <form class="max-w-md mx-auto">
+            {/* <form class="max-w-md mx-auto">
               <label for="default-search" class="mb-2 text-sm font-medium text-gray-900 sr-only">Search</label>
               <div class="relative">
                 <div class="absolute inset-y-0 start-0 flex items-center ps-3 pointer-events-none">
@@ -72,7 +72,7 @@ function Products() {
                 </div>
                 <input value={searchTerm} onChange={handleSearchChange} type="search" id="default-search" class="block w-full p-4 ps-10 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500 " placeholder="Search Mockups, Logos..." required />
               </div>
-            </form>
+            </form> */}
 
           </div>
         </div>

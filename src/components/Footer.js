@@ -1,6 +1,5 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import footerimg from "../assets/img/footer/footer_bg_img.webp";
 import logo from "../assets/img/header_logo.jpg";
 
 const Footer = () => {
@@ -43,7 +42,8 @@ const Footer = () => {
             <p className="text-gray-200">P.O. Box 1519, Post code 122, AL Mabela Muscat, Sultanate of Oman</p>
             <p className="text-gray-200 mt-2">+968 7909 8800 (Oman)</p>
             <p className="text-gray-200 mt-2">+91 9760 66 44 22 (India)</p>
-            <p className="text-gray-200 mt-2">contact@thktrade.com</p>
+            {/* <p className="text-gray-200 mt-2">contact@thktrade.com</p> */}
+            <a href="mailto:contact@thktrade.com" className="text-gray-200 mt-2">contact@thktrade.com</a>
 
             <div className="flex space-x-4 mt-4">
               <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="text-white hover:text-blue-600">
@@ -71,6 +71,16 @@ const Footer = () => {
             <Link to="#" className="hover:underline">Refund Policy</Link>
           </div>
         </div> */}
+        <div className="fixed w-[60px] h-[60px] bottom-10 right-10 bg-[#25d366] text-white rounded-full flex items-center justify-center text-xxl shadow-md z-[100]">
+        <a 
+        href="https://api.whatsapp.com/send?phone=+919760664422&text=Hello, THK"
+        target="_blank" 
+        rel="noopener noreferrer" 
+        // className="fixed bottom-16 right-4 text-green-500 z-50"
+      >
+        <i className="fab fa-whatsapp fa-2x"></i>
+      </a>
+      </div>
       </div>
     </footer>
   );

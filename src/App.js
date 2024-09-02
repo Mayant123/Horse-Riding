@@ -25,15 +25,7 @@ function App() {
       </main>
       <footer>
         <Footer />
-      </footer>
-      <a 
-        href="https://api.whatsapp.com/send?phone=+919760664422&text=Hello, THK"
-        target="_blank" 
-        rel="noopener noreferrer" 
-        className="fixed bottom-16 right-4 text-green-500 z-50"
-      >
-        <i className="fab fa-whatsapp fa-2x"></i>
-      </a>
+      </footer>      
     </div>
   );
 }
