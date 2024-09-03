@@ -53,7 +53,7 @@ function HomePageslider1() {
             breakpoints={{
               640: {
                 slidesPerView: 2,
-                spaceBetween: 200,
+                spaceBetween: 20,
               },
               768: {
                 slidesPerView: 3,
@@ -64,7 +64,7 @@ function HomePageslider1() {
                 spaceBetween: 50,
               },
             }}
-            modules={[ FreeMode, Pagination]}
+            modules={[Autoplay, FreeMode, Pagination]}
             className="mySwiper flex justify-center items-center w-full mt-10"
           >
             {sliderData.map((slide, index) => (
@@ -75,7 +75,7 @@ function HomePageslider1() {
                     alt={`${slide.alt} Flag`}
                     className="w-1/2 h-full object-cover rounded-s-lg rounded-e-3xl"
                   />
-                  <p className="lg:ms-8 text-xl font-black truncate">
+                  <p className="ms-8 text-xl font-black truncate">
                     {slide.country}
                   </p>
                 </div>
