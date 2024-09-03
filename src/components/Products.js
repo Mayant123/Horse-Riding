@@ -4,7 +4,7 @@ import categories from "../components/Datas/Categories";
 
 function Products() {
 
-  const [selectedcategory, setSelectedCategory] = useState("Saddles and Saddle Accessories");
+  const [selectedcategory, setSelectedCategory] = useState("Saddle");
   const [searchTerm, setSearchTerm] = useState("");
   const [showOnlyNewArrivals, setShowOnlyNewArrivals] = useState(false);
 
@@ -47,7 +47,7 @@ function Products() {
       <div className="py-4">
         <div className="flex flex-col md:flex-row justify-between items-center">
           <div className="flex justify-start gap-2">
-            <div className="w-[50%] md:w-[65%]">
+            <div className="w-[50%]">
               <select className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5" name="" id="" value={selectedcategory} onChange={handleCategoryChange}>
                 {categories.map((item, index) => {
                   return (

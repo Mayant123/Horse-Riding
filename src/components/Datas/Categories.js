@@ -3,23 +3,83 @@ import React from "react";
 const categories=[
     {
         id:1,
-        category:"Saddles and Saddle Accessories",
+        category:"Saddle",
     },
     {
         id:2,
-        category:"Bridles and Reins",
+        category:"Saddle Pad",
     },
     {
         id:3,
-        category:"Horse blankets and Grooming Supplies",
+        category:"Seat Saver",
     },
     {
         id:4,
-        category:"Riding Apparel and Footwear",
+        category:"Stirrup",
     },
     {
         id:5,
-        category:"Stable and farm Equipment",
+        category:"Bridle",
+    },
+    {
+        id:6,        
+        category:"Martingales",
+    },
+    {
+        id:7,
+        category:"Saddle Girth",
+    },
+    {
+        id:8,
+        category:"Halter",
+    },
+    {
+        id:9,
+        category:"Lead Rope",
+    },
+    {
+        id:10,
+        category:"Lunging Equipment",
+    },
+    {
+        id:11,
+        category:"Horse Boots",
+    },
+    {
+        id:12,
+        category:"Helmet",
+    },
+    {
+        id:13,
+        category:"Stable Rugs",
+    },
+    {
+        id:14,
+        category:"Stable Equipment",
+    },
+    {
+        id:15,
+        category:"Grooming Equipment",
+    },
+    {
+        id:16,
+        category:"Gloves",
+    },
+    {
+        id:17,
+        category:"Riding Boots",
+    },
+    {
+        id:18,
+        category:"Long Boots",
+    },
+    {
+        id:19,
+        category:"Riding Breeches",
+    },
+    {
+        id:20,
+        category:"Chaps",
     },
 ]
 
