@@ -137,14 +137,14 @@ const Footer = () => {
           </a>
         </div>
       </div>
-      <div className="text-center pt-4">
+      {/* <div className="text-center pt-4">
           <p>
             © 2024 THK Trading, All Rights Reserved. Design By{" "}
             <Link href="https://webjini.in/" target="_blank">
               Webjini
             </Link>
           </p>
-        </div>
+        </div> */}
     </footer>
   );
 };
