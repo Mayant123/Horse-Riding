@@ -14,7 +14,7 @@ const Header = () => {
     <nav className=" border-gray-200 py-1">
       <div className="max-w-screen-xl mx-auto flex flex-wrap items-center justify-between px-4 md:px-6">
         <a
-          href="#"
+          href="/"
           className="flex items-center"
         >
           <img
@@ -113,6 +113,18 @@ const Header = () => {
                 }`}
               >
                 Gallery
+              </Link>
+              </li>
+              <li className="md:mx-2">
+              <Link
+                to="/policy"
+                className={`block py-2 px-3 rounded md:p-0 ${
+                  location.pathname === '/policy' 
+                    ? 'text-black' 
+                    : 'text-gray-600 hover:text-black'
+                }`}
+              >
+                Privacy Policy
               </Link>
             </li>
           </ul>

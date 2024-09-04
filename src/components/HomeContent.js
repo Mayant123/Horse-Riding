@@ -9,6 +9,7 @@ const navigate=useNavigate();
 
   const handleClick=()=>{
     navigate("/about-us");
+    window.scrollTo(0, 0);
   }
   return (
     <div className="relative bg-white p-10 grid grid-cols-1 md:grid-cols-3 justify-items-center">

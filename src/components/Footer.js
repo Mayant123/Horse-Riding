@@ -17,6 +17,7 @@ const Footer = () => {
       <div className="relative z-10 container mx-auto lg:px-[115px] px-4">
         <div className="flex flex-col lg:flex-row justify-between items-start">
           <div className="flex flex-col mb-6 lg:mb-0 lg:w-[30%]">
+          <a href='/'>
             <div className="w-auto h-auto rounded-md">
               {/* <img src={logo} alt="Logo" className="mb-4 max-w-[150px] h-auto rounded-md" /> */}
               <img
@@ -25,6 +26,7 @@ const Footer = () => {
                 className="h-24 w-24 md:h-32 md:w-32 border-4 rounded-full shadow-lg mb-4"
               />
             </div>
+            </a>
             {/* <p className="text-gray-200 mb-4">
               The website exits to host your adventure with a budget in mind. Experience your next getaway at our Showplace for yourself.
             </p> */}
@@ -59,6 +61,11 @@ const Footer = () => {
               <li>
                 <Link to="/gallery" className="hover:text-gray-100">
                   Gallery
+                </Link>
+              </li>
+              <li>
+                <Link to="/policy" className="hover:text-gray-100">
+                  Privacy Policy
                 </Link>
               </li>
             </ul>

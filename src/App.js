@@ -7,6 +7,7 @@ import About from './components/About';
 import Contact from './components/Contact';
 import Products from './components/Products';
 import Gallery from './components/Gallery';
+import PrivacyPolicy from './components/PrivacyPolicy';
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
           <Route path='/contact-us' element={<Contact />} />      
           <Route path='/products' element={<Products />} />
           <Route path='/gallery' element={<Gallery />} />       
+          <Route path='/policy' element={<PrivacyPolicy />} />       
         </Routes>
       </main>
       <footer>
