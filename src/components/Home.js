@@ -28,7 +28,7 @@ const Home = () => {
         <div className="relative z-10 flex flex-col items-center justify-center h-full text-center p-8">
           <img
             src={header_logo}
-            className="h-24 w-24 md:h-32 md:w-32 border-4 rounded-full shadow-lg mb-4"
+            className="h-24 w-24 md:h-32 md:w-32 rounded-full shadow-lg mb-4"
             alt="Company Logo"
           />
           <h1 className="text-3xl md:text-5xl lg:text-5xl font-extrabold text-white tracking-wide mb-2 font-neue-haas-unica">
@@ -82,6 +82,11 @@ const Home = () => {
           </a>
         </div>
       </div>
+      <div className="w-full max-w-screen-lg mb-8 mt-4">
+        {/* <Carousel /> */}
+        {/* <SwiperCarousel /> */}
+        <NewSlider />
+      </div>
       <div className="w-full max-w-screen-lg lg:mb-8 md:mb-0">
         <HomeContent />
       </div>
@@ -105,11 +110,7 @@ const Home = () => {
         </div>
       </div>
 
-      <div className="w-full max-w-screen-lg mb-8 mt-4">
-        {/* <Carousel /> */}
-        {/* <SwiperCarousel /> */}
-        <NewSlider />
-      </div>
+      
       <div className="w-full max-w-screen-lg mb-8">
         <HomePageslider1 />
       </div>

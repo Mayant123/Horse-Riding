@@ -132,16 +132,27 @@ const ContactUs = () => {
           </div>
         </form>
       </div>
+      <div className="w-full lg:w-1/2 lg:hidden">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3655.5013650600267!2d58.107192975331955!3d23.622209478758137!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMjPCsDM3JzIwLjAiTiA1OMKwMDYnMzUuMiJF!5e0!3m2!1sen!2sin!4v1724674069556!5m2!1sen!2sin"
+          width="100%"
+          height="450"
+          style={{ borderRadius: "10px" }}
+          allowfullscreen
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </div>
 
       <div className="w-full lg:w-[40%] lg:pl-6 mt-10 lg:mt-0">
-        <h2 className="text-[2.75rem] leading-[3rem] font-bold text-gray-800 mb-4">
-          Send us a message
-        </h2>
-        <div className="mb-4">
-          <label className="block text-gray-700 font-bold">
-            Our social media :
+        {/* <h2 className="text-[2.75rem] leading-[3rem] font-bold text-gray-800 mb-4">
+          Our social media :
+        </h2> */}
+        <div className="mb-4 lg:block hidden">
+          <label className="block text-gray-700 font-bold text-[1.75rem] ">
+            Our social media
           </label>
-          <div className="flex space-x-4 mt-5">
+          <div className="flex space-x-4 mt-5 ">
             <a href="https://www.facebook.com/your-profile-name" target="_blank" rel="noopener noreferrer" className="text-blue-600 mr-2">
               <i className="fab fa-facebook-f fa-2x"></i>
             </a>

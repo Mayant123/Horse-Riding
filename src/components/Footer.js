@@ -23,7 +23,7 @@ const Footer = () => {
               <img
                 src={logo}
                 alt="Logo"
-                className="h-24 w-24 md:h-32 md:w-32 border-4 rounded-full shadow-lg mb-4"
+                className="h-24 w-24 md:h-32 md:w-32 rounded-full shadow-lg mb-4"
               />
             </div>
             </a>
@@ -126,7 +126,7 @@ const Footer = () => {
             <Link to="#" className="hover:underline">Refund Policy</Link>
           </div>
         </div> */}
-        <div className="fixed w-[60px] h-[60px] bottom-10 right-10 bg-[#25d366] text-white rounded-full flex items-center justify-center text-xxl shadow-md z-[100]">
+        {/* <div className="fixed w-[60px] h-[60px] bottom-10 right-10 bg-[#25d366] text-white rounded-full flex items-center justify-center text-xxl shadow-md z-[100]">
           <a
             href="https://api.whatsapp.com/send?phone=+919760664422&text=Hello, THK"
             target="_blank"
@@ -135,7 +135,7 @@ const Footer = () => {
           >
             <i className="fab fa-whatsapp fa-2x"></i>
           </a>
-        </div>
+        </div> */}
       </div>
       {/* <div className="text-center pt-4">
           <p>
