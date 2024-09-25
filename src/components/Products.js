@@ -23,7 +23,7 @@ function Products() {
   };
 
   const openLightbox = (image) => {
-    setSelectedImage(image);
+    setSelectedImage(image); 
     setIsLightboxOpen(true);
   };
 
@@ -76,19 +76,21 @@ function Products() {
         </div>
       </div>
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
-        {filteredProducts.map((item) => (
-          <div
-            key={item.id}
-            className="bg-white shadow-lg rounded-lg overflow-hidden cursor-pointer"
-            onClick={() => openLightbox(item)}
-          >
-            <img
-              src={item.img}
-              alt={item.altImg}
-              className="w-full h-[400px] object-cover"
-            />
-          </div>
-        ))}
+        {filteredProducts.map((item) =>
+          item.img.map((image, index) => (
+            <div
+              key={index}
+              className="bg-white shadow-lg rounded-lg overflow-hidden"
+            >
+              <img
+                src={image}
+                alt={item.altImg}
+                className="w-full h-[400px] object-cover"
+                onClick={() => openLightbox(image)} // Open lightbox for the clicked image
+              />
+            </div>
+          ))
+        )}
       </div>
 
       {/* Lightbox Modal */}
@@ -99,16 +101,10 @@ function Products() {
         >
           <div className="relative max-w-3xl w-full p-4">
             <img
-              src={selectedImage.img}
-              alt={selectedImage.altImg}
+              src={selectedImage} // Use the image URL directly
+              alt="NA"
               className="w-full h-auto max-h-[80vh] object-contain rounded-lg"
             />
-            {/* <button
-              className="absolute top-2 right-2 text-white bg-gray-700 hover:bg-gray-800 rounded-full p-2"
-              onClick={closeLightbox}
-            >
-              ✕
-            </button> */}
           </div>
         </div>
       )}
