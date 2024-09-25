@@ -8,11 +8,50 @@ const ContactUs = () => {
   const [countryCode, setCountryCode] = useState('+1'); // Default country code
   const [phoneNumber, setPhoneNumber] = useState('');
   const [country, setCountry] = useState(''); // State for country field
+  const [name,setname]=useState('')
+  const [email,setemail]=useState('')
+  const [description,setdescription] = useState('')
+
+  const contactusForm = async()=>{
+    const formData = {
+          "Domain":"thktradeers",
+          "email":email,
+          "Name":name,
+          "Contact":phoneNumber,
+          "Subjec":country,
+          "Description":description
+      };
+
+      try {
+        const response = await fetch('https://nexon.eazotel.com/eazotel/addcontacts', {
+            method: 'POST', // Set the method to POST
+            headers: {
+                'Content-Type': 'application/json' // Set the content type to JSON
+            },
+            body: JSON.stringify(formData) // Convert form data to a JSON string
+        });
+
+        if (!response.ok) {
+            throw new Error(`Error: ${response.status}`); // Handle non-2xx HTTP responses
+        }
+
+        const data = await response.json(); // Parse the JSON response
+        setCountryCode('+1')
+        setPhoneNumber('')
+        setCountry('')
+        setname('')
+        setemail('')
+        setdescription('')
+        alert('Form Submitted')
+    } catch (error) {
+        console.error('Error:', error); // Handle errors
+    }
+  }
 
   return (
     <section className="mt-10 flex flex-col lg:flex-row">
       <div className="w-full lg:w-[60%] p-6 shadow-xl">
-        <form>
+        <div>
           <div className="flex flex-col lg:flex-row gap-6 mb-6">
             <div className="flex-1">
               <label
@@ -25,6 +64,8 @@ const ContactUs = () => {
                 className="w-full bg-transparent border-b-2 border-gray-300 text-gray-900 focus:outline-none focus:border-blue-500"
                 type="text"
                 id="name"
+                value={name}
+                onChange={(e)=>{setname(e.target.value)}}
                 placeholder="Enter your name"
                 required
               />
@@ -82,6 +123,8 @@ const ContactUs = () => {
                 className="w-full bg-transparent border-b-2 border-gray-300 text-gray-900 focus:outline-none focus:border-blue-500"
                 type="email"
                 id="email"
+                value={email}
+                onChange={(e)=>{setemail(e.target.value)}}
                 placeholder="Enter your email"
                 required
               />
@@ -118,6 +161,8 @@ const ContactUs = () => {
               id="message"
               placeholder="Enter your message"
               rows="4"
+              value={description}
+              onChange={(e)=>{setdescription(e.target.value)}}
               required
             ></textarea>
           </div>
@@ -126,33 +171,23 @@ const ContactUs = () => {
             <button
               className="w-full bg-button bg-button-on-hover font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
               type="submit"
+              onClick={()=>{contactusForm()}}
             >
               Send Message
             </button>
           </div>
-        </form>
-      </div>
-      <div className="w-full lg:w-1/2 lg:hidden">
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3655.5013650600267!2d58.107192975331955!3d23.622209478758137!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMjPCsDM3JzIwLjAiTiA1OMKwMDYnMzUuMiJF!5e0!3m2!1sen!2sin!4v1724674069556!5m2!1sen!2sin"
-          width="100%"
-          height="450"
-          style={{ borderRadius: "10px" }}
-          allowfullscreen
-          loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade"
-        ></iframe>
+        </div>
       </div>
 
       <div className="w-full lg:w-[40%] lg:pl-6 mt-10 lg:mt-0">
-        {/* <h2 className="text-[2.75rem] leading-[3rem] font-bold text-gray-800 mb-4">
-          Our social media :
-        </h2> */}
-        <div className="mb-4 lg:block hidden">
-          <label className="block text-gray-700 font-bold text-[1.75rem] ">
-            Our social media
+        <h2 className="text-[2.75rem] leading-[3rem] font-bold text-gray-800 mb-4">
+          Send us a message
+        </h2>
+        <div className="mb-4">
+          <label className="block text-gray-700 font-bold">
+            Our social media :
           </label>
-          <div className="flex space-x-4 mt-5 ">
+          <div className="flex space-x-4 mt-5">
             <a href="https://www.facebook.com/your-profile-name" target="_blank" rel="noopener noreferrer" className="text-blue-600 mr-2">
               <i className="fab fa-facebook-f fa-2x"></i>
             </a>

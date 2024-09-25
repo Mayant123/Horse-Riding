@@ -1,15 +1,54 @@
 import React, { useState } from "react";
+import { FaLocationDot } from "react-icons/fa6";
+import { IoMdCall } from "react-icons/io";
+import { MdEmail } from "react-icons/md";
 import PhoneInput from 'react-phone-input-2';
 import 'react-phone-input-2/lib/style.css';
 import "./style.css";
-import { IoMdCall } from "react-icons/io";
-import { MdEmail } from "react-icons/md";
-import { FaLocationDot } from "react-icons/fa6";
 
 function Contact() {
     const [countryCode, setCountryCode] = useState('+1'); // Default country code
     const [phoneNumber, setPhoneNumber] = useState('');
     const [country, setCountry] = useState(''); // State for country field
+    const [name,setname]=useState('')
+    const [email,setemail]=useState('')
+    const [description,setdescription] = useState('')
+
+  const contactusForm = async()=>{
+    const formData = {
+          "Domain":"thktradeers",
+          "email":email,
+          "Name":name,
+          "Contact":phoneNumber,
+          "Subjec":country,
+          "Description":description
+      };
+
+      try {
+        const response = await fetch('https://nexon.eazotel.com/eazotel/addcontacts', {
+            method: 'POST', // Set the method to POST
+            headers: {
+                'Content-Type': 'application/json' // Set the content type to JSON
+            },
+            body: JSON.stringify(formData) // Convert form data to a JSON string
+        });
+
+        if (!response.ok) {
+            throw new Error(`Error: ${response.status}`); // Handle non-2xx HTTP responses
+        }
+
+        const data = await response.json(); // Parse the JSON response
+        setCountryCode('+1')
+        setPhoneNumber('')
+        setCountry('')
+        setname('')
+        setemail('')
+        setdescription('')
+        alert('Form Submitted')
+    } catch (error) {
+        console.error('Error:', error); // Handle errors
+    }
+  }
 
     return (
         <div className="p-6 lg:p-12">
@@ -51,7 +90,7 @@ function Contact() {
             
             <section className="mt-10">
                 <div className="w-full p-6 shadow-xl">
-                    <form>
+                    <div>
                         <div className="flex flex-col lg:flex-row gap-6 mb-6">
                             <div className="flex-1">
                                 <label
@@ -65,6 +104,8 @@ function Contact() {
                                     type="text"
                                     id="name"
                                     placeholder="Enter your name"
+                                    value={name}
+                                    onChange={(e)=>{setname(e.target.value)}}
                                     required
                                 />
                             </div>
@@ -122,6 +163,8 @@ function Contact() {
                                     type="email"
                                     id="email"
                                     placeholder="Enter your email"
+                                    value={email}
+                                    onChange={(e)=>{setemail(e.target.value)}}
                                     required
                                 />
                             </div>
@@ -157,6 +200,8 @@ function Contact() {
                                 id="message"
                                 placeholder="Enter your message"
                                 rows="4"
+                                value={description}
+                                onChange={(e)=>{setdescription(e.target.value)}}
                                 required
                             ></textarea>
                         </div>
@@ -165,11 +210,12 @@ function Contact() {
                             <button
                                 className="w-full bg-button bg-button-on-hover font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
                                 type="submit"
+                                onClick={()=>{contactusForm()}}
                             >
                                 Send Message
                             </button>
                         </div>
-                    </form>
+                    </div>
                 </div>
             </section>
         </div>
