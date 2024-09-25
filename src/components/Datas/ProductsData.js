@@ -30,7 +30,7 @@ const ProductData = [
     {
         id: 1,
         category: "Saddle",
-        img: [img_1, saddle_1, saddle_2, saddle_3, saddle_4, saddle_5, saddle_6, saddle_7],
+        img: [saddle_1, saddle_2, saddle_3, saddle_4, saddle_5, saddle_6, saddle_7],
         altImg: "No Img Found",
         title: "Product Name required",
         isNewArrival:true,

@@ -3,7 +3,7 @@ import products from "../components/Datas/ProductsData";
 import categories from "../components/Datas/Categories";
 
 function Products() {
-  const [selectedCategory, setSelectedCategory] = useState("Saddle");
+  const [selectedCategory, setSelectedCategory] = useState("all");
   const [searchTerm, setSearchTerm] = useState("");
   const [showOnlyNewArrivals, setShowOnlyNewArrivals] = useState(false);
   const [selectedImage, setSelectedImage] = useState(null);
@@ -35,7 +35,7 @@ function Products() {
   const filteredProducts = showOnlyNewArrivals
     ? products.filter((item) => item.isNewArrival)
     : products.filter((item) => {
-        const filterCategoryChange = item.category === selectedCategory;
+        const filterCategoryChange = selectedCategory === "all" || item.category === selectedCategory;
         const filterSearchItem = item.title
           .toLowerCase()
           .includes(searchTerm.toLowerCase());
@@ -56,6 +56,7 @@ function Products() {
                 value={selectedCategory}
                 onChange={handleCategoryChange}
               >
+                <option value="all">All Products</option>
                 {categories.map((item, index) => (
                   <option key={index} value={item.category}>
                     {item.category}
@@ -71,7 +72,6 @@ function Products() {
             </button>
           </div>
           <div>
-            {/* Search Input Placeholder */}
           </div>
         </div>
       </div>
