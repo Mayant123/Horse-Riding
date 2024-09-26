@@ -25,6 +25,21 @@ import saddle_pad_3 from "../../assets/img/Saddle_pads/1000036969.jpg";
 import saddle_pad_4 from "../../assets/img/Saddle_pads/1000036970.jpg";
 import saddle_pad_5 from "../../assets/img/Saddle_pads/1000036977.png";
 import saddle_pad_6 from "../../assets/img/Saddle_pads/1000036983.jpg";
+import bridle_1 from "../../assets/img/bridle/bridle1.jpg";
+import bridle_2 from "../../assets/img/bridle/bridle2.jpg";
+import bridle_3 from "../../assets/img/bridle/bridle3.jpg";
+import bridle_4 from "../../assets/img/bridle/bridle4.jpg";
+import halter_1 from "../../assets/img/Halter/Halter1.jpg";
+import halter_2 from "../../assets/img/Halter/Halter2.jpg";
+import halter_3 from "../../assets/img/Halter/Halter3.jpg";
+import halter_4 from "../../assets/img/Halter/Halter4.jpg";
+import halter_5 from "../../assets/img/Halter/Halter5.jpg";
+import halter_6 from "../../assets/img/Halter/Halter6.jpg";
+import halter_7 from "../../assets/img/Halter/Halter7.jpg";
+import halter_8 from "../../assets/img/Halter/Halter8.jpg";
+import Stirrup_1 from "../../assets/img/Stirrups/Strirrups1.png";
+import Stirrup_2 from "../../assets/img/Stirrups/Strirrups3(1).png";
+import Stirrup_3 from "../../assets/img/Stirrups/Strirrups3.png";
 
 const ProductData = [
     {
@@ -45,154 +60,153 @@ const ProductData = [
         isNewArrival:false,
 
     },
-    {
-        id: 3,
-        category: "Seat Saver",
-        img: [img_3],
-        altImg: "No Img Found",
-        title: "Product Name required",
-        isNewArrival:true,
-
-    },
+    // {
+    //     id: 3,
+    //     category: "Seat Saver",
+    //     img: [img_3],
+    //     altImg: "No Img Found",
+    //     title: "Product Name required",
+    //     isNewArrival:false,
+    // },
     {
         id: 4,
         category: "Stirrup",
-        img: [img_4],
+        img: [Stirrup_1, Stirrup_2, Stirrup_3],
         altImg: "No Img Found",
         title: "Riding apparel and footwear",
-        isNewArrival:true,
+        isNewArrival:false,
 
     },
     {
         id: 5,
         category:"Bridle",
-        img: [img_5],
+        img: [bridle_1, bridle_2, bridle_3, bridle_4],
         altImg: "No Img Found",
         title: "Whips and Spurs",
-        isNewArrival:true,
+        isNewArrival:false,
 
     },
     {
         id: 6,
         category:"Martingales",
-        img: [img_6],
+        img: [],
         altImg: "No Img Found",
         title: "Bridles and reins",
-        isNewArrival:true,
+        isNewArrival:false,
 
     },
     {
         id: 7,
         category:"Saddle Girth",
-        img: [img_7],
+        img: [],
         altImg: "No Img Found",
         title: "Product Name required",
-        isNewArrival:true,
+        isNewArrival:false,
 
     },
     {
         id: 8,
         category:"Halter",
-        img: [img_8],
+        img: [halter_1, halter_2, halter_3, halter_4, halter_5, halter_6, halter_7, halter_8],
         altImg: "No Img Found",
         title: "Product Name required",
-        isNewArrival:true,
+        isNewArrival:false,
     },
     {
         id: 9,
         category:"Lead Rope",
-        img: [img_8],
+        img: [],
         altImg: "No Img Found",
         title: "Product Name required",
-        isNewArrival:true,
+        isNewArrival:false,
     },
     {
         id: 10,
         category:"Lunging Equipment",
-        img: [img_10],
+        img: [],
         altImg: "No Img Found",
         title: "Product Name required",
-        isNewArrival:true,
+        isNewArrival:false,
     },
     {
         id: 11,
         category:"Horse Boots",
-        img: [img_11],
+        img: [],
         altImg: "No Img Found",
         title: "Product Name required",
-        isNewArrival:true,
+        isNewArrival:false,
     },
-    {
-        id: 12,
-        category:"Helmet",
-        img: [img_12],
-        altImg: "No Img Found",
-        title: "Product Name required",
-        isNewArrival:true,
-    },
+    // {
+    //     id: 12,
+    //     category:"Helmet",
+    //     img: [i],
+    //     altImg: "No Img Found",
+    //     title: "Product Name required",
+    //     isNewArrival:false,
+    // },
     {
         id: 13,
-        category:"Stable Rugs",
-        img: [img_13],
+        category:"Horse Rugs",
+        img: [],
         altImg: "No Img Found",
         title: "Product Name required",
-        isNewArrival:true,
+        isNewArrival:false,
     },
     {
         id: 14,
         category:"Stable Equipment",
-        img: [img_14],
+        img: [],
         altImg: "No Img Found",
         title: "Product Name required",
-        isNewArrival:true,
+        isNewArrival:false,
     },
     {
         id: 15,
         category:"Grooming Equipment",
-        img: [img_9],
+        img: [],
         altImg: "No Img Found",
         title: "Product Name required",
-        isNewArrival:true,
+        isNewArrival:false,
     },
-    {
-        id: 16,
-        category:"Gloves",
-        img: [img_8],
-        altImg: "No Img Found",
-        title: "Product Name required",
-        isNewArrival:true,
-    },
+    // {
+    //     id: 16,
+    //     category:"Gloves",
+    //     img: [],
+    //     altImg: "No Img Found",
+    //     title: "Product Name required",
+    //     isNewArrival:false,
+    // },
     {
         id:17,
         category:"Riding Boots",
-        img: [img_8],
+        img: [],
         altImg: "No Img Found",
         title: "Product Name required",
-        isNewArrival:true,
+        isNewArrival:false,
     },
-    {
-        id:18,
-        category:"Long Boots",
-        img: [img_8],
-        altImg: "No Img Found",
-        title: "Product Name required",
-        isNewArrival:true,
-    },
+    // {
+    //     id:18,
+    //     category:"Long Boots",
+    //     img: [],
+    //     altImg: "No Img Found",
+    //     title: "Product Name required",
+    //     isNewArrival:false,
+    // },
     {
         id:19,
         category:"Riding Breeches",
-        img: [img_8],
+        img: [],
         altImg: "No Img Found",
         title: "Product Name required",
-        isNewArrival:true,
+        isNewArrival:false,
     },
     {
         id:20,
         category:"Chaps",
-        img: [img_8],
+        img: [],
         altImg: "No Img Found",
         title: "Product Name required",
-        isNewArrival:true,
+        isNewArrival:false,
     },
 
 ]

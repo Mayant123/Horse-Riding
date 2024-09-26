@@ -1,5 +1,3 @@
-import React from "react";
-
 const categories=[
     {
         id:1,
@@ -9,10 +7,10 @@ const categories=[
         id:2,
         category:"Saddle Pad",
     },
-    {
-        id:3,
-        category:"Seat Saver",
-    },
+    // {
+    //     id:3,
+    //     category:"Seat Saver",
+    // },
     {
         id:4,
         category:"Stirrup",
@@ -45,13 +43,13 @@ const categories=[
         id:11,
         category:"Horse Boots",
     },
-    {
-        id:12,
-        category:"Helmet",
-    },
+    // {
+    //     id:12,
+    //     category:"Helmet",
+    // },
     {
         id:13,
-        category:"Stable Rugs",
+        category:"Horse Rugs",
     },
     {
         id:14,
@@ -61,18 +59,18 @@ const categories=[
         id:15,
         category:"Grooming Equipment",
     },
-    {
-        id:16,
-        category:"Gloves",
-    },
+    // {
+    //     id:16,
+    //     category:"Gloves",
+    // },
     {
         id:17,
         category:"Riding Boots",
     },
-    {
-        id:18,
-        category:"Long Boots",
-    },
+    // {
+    //     id:18,
+    //     category:"Long Boots",
+    // },
     {
         id:19,
         category:"Riding Breeches",

@@ -17,8 +17,7 @@ function PrivacyPolicy() {
         <p className="mt-2">
           We use Your Personal data to provide and improve the Service. By using
           the Service, You agree to the collection and use of information in
-          accordance with this Privacy Policy. This Privacy Policy has been
-          created with the help of the Privacy Policy Generator.
+          accordance with this Privacy Policy.
         </p>
       </div>
 
@@ -538,7 +537,7 @@ function PrivacyPolicy() {
           <li>
             By email:{" "}
             <a href="mailto:tariqkhan@thktrade.com" className="text-blue-500">
-              tariqkhan@thktrade.com
+            contact@thktrade.com
             </a>
           </li>
         </ul>
