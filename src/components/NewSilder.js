@@ -1,37 +1,41 @@
 import React, { useEffect, useRef } from "react";
 import MicroSlider from "micro-slider";
 import Hammer from "hammerjs";
-import img_1 from "../assets/img/img_1.jpg";
-import img_2 from "../assets/img/img_2.jpg";
-import img_3 from "../assets/img/img_3.jpg";
-import img_4 from "../assets/img/img_4.jpg";
-import img_5 from "../assets/img/img_5.jpg";
-import img_6 from "../assets/img/img_6.jpg";
-import img_7 from "../assets/img/img_7.jpg";
-import img_8 from "../assets/img/img_8.jpg";
-import img_9 from "../assets/img/img_9.jpg";
-import img_10 from "../assets/img/img_10.jpg";
-import img_11 from "../assets/img/img_11.jpg";
-import img_12 from "../assets/img/img_12.jpg";
-import img_13 from "../assets/img/img_13.jpg";
-import img_14 from "../assets/img/img_14.jpg";
+import img_1 from "../assets/img/Saddle/1000036985.jpeg";
+import img_2 from "../assets/img/Saddle_pads/1000036966.jpg";
+import img_3 from "../assets/img/Stirrups/Strirrups1.png";
+import img_4 from "../assets/img/bridle/bridle1.jpg";
+import img_5 from "../assets/img/Martingelas/1000038175.jpg";
+import img_6 from "../assets/img/saddle_girth/1000037975.jpg";
+import img_7 from "../assets/img/Halter/Halter1.jpg";
+import img_8 from "../assets/img/lead_ropes/1000037956.jpg";
+import img_9 from "../assets/img/horse_boots/IMG-20240927-WA0022.png";
+import img_10 from "../assets/img/horse_rugs/IMG-20240927-WA0034.jpg";
+import img_11 from "../assets/img/grooming_equipment/IMG-20240927-WA0059.jpg";
+import img_12 from "../assets/img/riding_boots/IMG-20240927-WA0065.png";
+import img_13 from "../assets/img/riding_breeches/1000038323.jpg";
+import img_14 from "../assets/img/chaps/1000038350.jpg";
+import img_15 from "../assets/img/gift_items/img_6.jpg";
+import img_16 from "../assets/img/general/img_11.jpg";
 import { Link, useNavigate } from "react-router-dom";
 
 const images = [
-  { id: 1, src: img_1, alt: "Image 1", text: "Saddles Girth and Stirrup" },
-  { id: 2, src: img_2, alt: "Image 2", text: "Bridles and reins" },
-  { id: 3, src: img_3, alt: "Image 3", text: "Lunging" },
-  { id: 4, src: img_4, alt: "Image 4", text: "Riding apparel and footwear" },
-  { id: 5, src: img_5, alt: "Image 5", text: "Whips and Spurs" },
-  { id: 6, src: img_6, alt: "Image 6", text: "Bridles and reins" },
-  { id: 7, src: img_7, alt: "Image 7", text: "" },
-  { id: 8, src: img_8, alt: "Image 8", text: "" },
-  { id: 9, src: img_9, alt: "Image 9", text: "" },
-  { id: 10, src: img_10, alt: "Image 10", text: "" },
-  { id: 11, src: img_11, alt: "Image 11", text: "" },
-  { id: 12, src: img_12, alt: "Image 12", text: "" },
-  { id: 13, src: img_13, alt: "Image 13", text: "" },
-  { id: 14, src: img_14, alt: "Image 14", text: "" },
+  { id: 1, src: img_1, alt: "Image 1", text: "Saddle" },
+  { id: 2, src: img_2, alt: "Image 2", text: "Saddle Pad" },
+  { id: 3, src: img_3, alt: "Image 3", text: "Stirrup" },
+  { id: 4, src: img_4, alt: "Image 4", text: "Bridle" },
+  { id: 5, src: img_5, alt: "Image 5", text: "Martingales" },
+  { id: 6, src: img_6, alt: "Image 6", text: "Saddle Girth" },
+  { id: 7, src: img_7, alt: "Image 7", text: "Halter" },
+  { id: 8, src: img_8, alt: "Image 8", text: "Lead Rope" },
+  { id: 9, src: img_9, alt: "Image 9", text: "Horse Boots" },
+  { id: 10, src: img_10, alt: "Image 10", text: "Horse Rugs" },
+  { id: 11, src: img_11, alt: "Image 11", text: "Grooming Equipment" },
+  { id: 12, src: img_12, alt: "Image 12", text: "Riding Boots" },
+  { id: 13, src: img_13, alt: "Image 13", text: "Riding Breeches" },
+  { id: 14, src: img_14, alt: "Image 14", text: "Chaps" },
+  { id: 15, src: img_15, alt: "Image 15", text: "Gift items" },
+  { id: 16, src: img_16, alt: "Image 16", text: "General" },
 ];
 
 function NewSlider() {

@@ -35,10 +35,10 @@ const categories=[
         id:9,
         category:"Lead Rope",
     },
-    {
-        id:10,
-        category:"Lunging Equipment",
-    },
+    // {
+    //     id:10,
+    //     category:"Lunging Equipment",
+    // },
     {
         id:11,
         category:"Horse Boots",
@@ -51,10 +51,10 @@ const categories=[
         id:13,
         category:"Horse Rugs",
     },
-    {
-        id:14,
-        category:"Stable Equipment",
-    },
+    // {
+    //     id:14,
+    //     category:"Stable Equipment",
+    // },
     {
         id:15,
         category:"Grooming Equipment",
@@ -78,6 +78,14 @@ const categories=[
     {
         id:20,
         category:"Chaps",
+    },
+    {
+        id:21,
+        category:"Gift items",
+    },
+    {
+        id:22,
+        category:"General",
     },
 ]
 
